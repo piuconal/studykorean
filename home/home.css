@@ -201,6 +201,9 @@ footer {
     width: 100%;
     text-align: left; /* Căn trái cho chế độ thu gọn */
   }
+  .nav-link {
+    padding: 8px 15px !important;
+  }
   /* Footer */
   .footer-content {
     flex-direction: column;
