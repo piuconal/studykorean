@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Học Tiếng Hàn</title>
-  <link rel="stylesheet" href="../Home/home.css">
+  <link rel="stylesheet" href="/home/home.css">
   <link rel="stylesheet" href="index.css">
-  <link rel="icon" href="../assets/images/logo_tab.png">
+  <link rel="icon" href="/assets/images/logo_tab.png">
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <!-- jQuery -->
@@ -23,7 +23,7 @@
 <body>
   <!-- Header -->
   <header>
-    <video src="../assets/video/header_deskop.mp4" autoplay muted loop></video>
+    <video src="/assets/video/header_deskop.mp4" autoplay muted loop></video>
   </header>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -35,25 +35,26 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav w-100 d-flex justify-content-between align-items-center">
           <li class="nav-item">
-            <a class="nav-link" href="../Home/home.html">Trang chủ</a>
+            <a class="nav-link" href="/home/home.html">Trang chủ</a>
           </li>
-          <!-- Dropdown for "Học tiếng Hàn" -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="../Unit/index.html" id="navbarDropdown" role="button">
+            <a class="nav-link dropdown-toggle active href=" #" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
               Học tiếng Hàn
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <!-- Tiếng Hàn cơ bản -->
-              <a class="dropdown-item" href="#" data-toggle="modal" data-target="#myModal"
-                onclick="loadContent('Tiếng Hàn cơ bản')">Tiếng Hàn cơ bản</a>
+              <!-- <a class="dropdown-item" href="#" data-toggle="modal" data-target="#myModal"
+                onclick="loadContent('Tiếng Hàn cơ bản')">Tiếng Hàn cơ bản</a> -->
+              <a class="dropdown-item" href="../unit/basic/index.html"">Tiếng Hàn cơ bản</a>
               <!-- Tiếng Hàn cho thuyền viên -->
-              <a class="dropdown-item" href="#" data-toggle="modal" data-target="#myModal"
-                onclick="loadContent('Tiếng Hàn cho thuyền viên')">Tiếng Hàn cho thuyền viên</a>
+              <!-- <a class=" dropdown-item" href="#" data-toggle="modal" data-target="#myModal"
+                onclick="loadContent('Tiếng Hàn cho thuyền viên')">Tiếng Hàn cho thuyền viên</a> -->
+              <a class="dropdown-item" href="../unit/basic/index.html"">Tiếng Hàn cho thuyển viên</a>
             </div>
           </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Giáo dục an toàn</a>
+          <li class=" nav-item">
+                <a class="nav-link" href="#">Giáo dục an toàn</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Thông báo</a>
@@ -69,6 +70,7 @@
     </div>
   </nav>
   <!-- Modal -->
+  <!-- 
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -80,18 +82,17 @@
           </button>
         </div>
         <div class="modal-body" id="modalBody">
-          <!-- Nội dung sẽ được thay đổi khi nhấn vào Tiếng Hàn cơ bản hoặc Tiếng Hàn cho thuyền viên -->
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- Section -->
   <section>
     <div class="section-content">
-      <h4>HỌC TIẾNG HÀN</h4>
+      <h4>Tiếng Hàn cơ bản</h4>
     </div>
   </section>
   <section class="title">
@@ -104,8 +105,8 @@
         vocabulary!</p>
     </div>
     <div class="section-content card">
-      <img data-url="Lessons/lesson1-8.html" class="mb-2" src="../assets/images/Lessons-1-8-picture.png" alt="">
-      <p><span data-url="Lessons/lesson1-8.html">Lessons 1 – 8: </span>Start learning actual grammar, phrases, and
+      <img data-url="lessons/lesson1-8.html" class="mb-2" src="/assets/images/Lessons-1-8-picture.png" alt="">
+      <p><span data-url="lessons/lesson1-8.html">Lessons 1 – 8: </span>Start learning actual grammar, phrases, and
         words that
         you can apply to daily
         conversation! We will start by introducing you to basic Korean sentence structure, which will lead into you
@@ -114,7 +115,7 @@
         foundation for your future studies.
     </div>
     <div class="section-content card">
-      <img class="mb-2" src="../assets/images/Lesson-9-16-pic.png" alt="">
+      <img class="mb-2" src="/assets/images/Lesson-9-16-pic.png" alt="">
       <p><span>Lessons 9 – 16: </span>These lessons will build heavily on what you learned from earlier lessons. In
         these lessons, you will be introduced to numbers in Korean and how to deal with telling time, counting things,
         and many more things that require an understanding of numbers (Korean numbers are very confusing!). In addition,
@@ -122,7 +123,7 @@
         sentences!
     </div>
     <div class="section-content card">
-      <img class="mb-2" src="../assets/images/1725picture.png" alt="">
+      <img class="mb-2" src="/assets/images/1725picture.png" alt="">
       <p><span>Lessons 17 – 25: </span>In these final 8 lessons of Unit 1, you will be introduced to connecting
         particles in Korean. Eventually, you will learn hundreds of these particles, but here in these lessons, you will
         be introduced to the most basic ones (~고, ~고 싶다 and ~고 있다 to name a few). You will also learn about using 잘/못 in
@@ -136,9 +137,9 @@
       <div class="footer-content">
         <span>Hoa Vàng © 2017 | Giấy phép | Liên hệ</span>
         <div class="social-icons">
-          <a href="#"><img src="../assets/images/link_talk.png" alt="KakaoTalk"></a>
-          <a href="#"><img src="../assets/images/link_zalo.png" alt="Zalo"></a>
-          <a href="#"><img src="../assets/images/link_facebook.png" alt="Facebook"></a>
+          <a href="#"><img src="/assets/images/link_talk.png" alt="KakaoTalk"></a>
+          <a href="#"><img src="/assets/images/link_zalo.png" alt="Zalo"></a>
+          <a href="#"><img src="/assets/images/link_facebook.png" alt="Facebook"></a>
         </div>
       </div>
     </div>
