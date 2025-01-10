@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+/* Header */
+header {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+header video {
+  width: 100%;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px !important;
+  width: 100%;
+  margin: auto;
+}
+
+.navbar-nav {
+  width: 100%;
+}
+
+.nav-item {
+  flex-grow: 1;
+  text-align: center; /* Căn giữa cho chế độ desktop */
+}
+
+.nav-link {
+  display: block;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #007bff;
+  color: white !important;
+}
+
+.nav-link.active {
+  background-color: #0056b3;
+  color: white !important;
+}
+
+.navbar-collapse {
+  justify-content: flex-start;
+}
+
+/* Căn giữa nội dung trong modal */
+#modalBody ul {
+  list-style-type: none; /* Loại bỏ các chấm đen trong danh sách */
+  padding-left: 0; /* Xóa lề trái của danh sách */
+}
+
+#modalBody li {
+  margin-bottom: 15px; /* Thêm khoảng cách giữa các mục */
+}
+
+#modalBody a {
+  text-decoration: none; /* Xóa gạch chân của liên kết */
+  color: #007bff; /* Màu chữ liên kết */
+  font-size: 16px; /* Thay đổi kích thước chữ */
+  display: block; /* Đảm bảo liên kết chiếm toàn bộ chiều rộng */
+}
+
+#modalBody a:hover {
+  color: #0056b3; /* Màu chữ khi hover */
+}
+
+/* Cải thiện căn lề của modal */
+.modal-header {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.modal-footer {
+  border-top: 1px solid #dee2e6;
+  text-align: right;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+/* Section */
+section {
+  background-color: #f5f2f2; /* Màu nền giống footer */
+  color: #161616; /* Màu chữ giống footer */
+  padding: 20px 0; /* Khoảng cách trên và dưới */
+  width: 100%; /* Chiếm hết chiều rộng */
+  position: relative;
+}
+
+.section-content {
+  padding: 0px 15px;
+  max-width: 1200px; /* Giới hạn kích thước nội dung */
+  margin: 0 auto; /* Căn giữa nội dung */
+  display: flex;
+  text-align: left !important; /* Căn giữa văn bản */
+}
+
+/* Hiệu ứng chữ ra từng ký tự */
+h4 {
+  font-weight: 200 !important;
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+h4 span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+h4 span {
+  animation-delay: 0.5s;
+}
+
+/* Hiệu ứng chữ từ dưới lên */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #f5f2f2; /* Màu nền đen */
+  color: #161616; /* Màu chữ trắng */
+  padding: 10px 0;
+  width: 100%; /* Đảm bảo footer rộng đầy đủ */
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto; /* Căn giữa nội dung bên trong */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons a {
+  margin-left: 10px;
+}
+
+.social-icons img {
+  width: 30px; /* Kích thước biểu tượng */
+  height: auto;
+}
+
+@media (max-width: 992px) {
+  /* Navbar */
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-item {
+    width: 100%;
+    text-align: left; /* Căn trái cho chế độ thu gọn */
+  }
+}
