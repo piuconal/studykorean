@@ -1,0 +1,39 @@
+/* Section */
+.title {
+  background-color: #ffffff; /* Màu nền giống footer */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(86, 87, 87);
+  line-height: 30px;
+  font-size: 14px;
+}
+
+.card img {
+  width: 350px;
+}
+
+.card span {
+  color: #df2929;
+}
+
+.card img:hover {
+  cursor: pointer;
+}
+.card span:hover {
+  cursor: pointer;
+  color: #241515;
+  transition: 0.5s ease-in-out;
+}
+@media (max-width: 992px) {
+  .card img {
+    width: 200px;
+  }
+}

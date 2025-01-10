@@ -45,6 +45,10 @@ header video {
   text-align: center; /* Căn giữa cho chế độ desktop */
 }
 
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
 .nav-link {
   display: block;
   padding: 10px 15px;
@@ -147,9 +151,6 @@ h4 span {
 
 /* Footer */
 footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   background-color: #f5f2f2;
   color: #161616;
   width: 100%;
@@ -177,7 +178,7 @@ footer {
 }
 
 .social-icons a {
-  margin-left: 10px;
+  margin-left: 30px;
 }
 
 .social-icons img {
@@ -185,27 +186,11 @@ footer {
   height: auto;
 }
 
-@media (max-width: 768px) {
-  .footer-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .footer-content span {
-    margin-bottom: 10px;
-  }
-
-  .social-icons {
-    justify-content: center;
-    margin-top: 10px;
-  }
-
-  .social-icons a {
-    margin: 0 10px;
-  }
-}
-
 @media (max-width: 992px) {
+  /* Section */
+  .section-content h4 {
+    font-size: 18px;
+  }
   /* Navbar */
   .navbar-nav {
     flex-direction: column;
@@ -215,5 +200,24 @@ footer {
   .nav-item {
     width: 100%;
     text-align: left; /* Căn trái cho chế độ thu gọn */
+  }
+  /* Footer */
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-content span {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  .social-icons {
+    transform: scale(0.8);
+    justify-content: center;
+  }
+
+  .social-icons a {
+    margin: 0 10px;
   }
 }
