@@ -1,0 +1,38 @@
+/* Section */
+.des {
+  background-color: white;
+}
+
+.des a {
+  color: rgb(219, 38, 38);
+}
+
+.audio h5,
+span {
+  list-style: 20px;
+  font-size: 15px;
+  margin: 0;
+}
+
+.audio h5 {
+  font-weight: 400;
+}
+
+.audio span {
+  color: rgb(219, 38, 38);
+}
+
+.audio button {
+  width: 80px;
+  background-color: rgb(135, 135, 132) !important;
+}
+
+.audio {
+  display: flex;
+  gap: 10px;
+  align-items: center !important;
+}
+
+.exam {
+  flex-direction: column;
+}
