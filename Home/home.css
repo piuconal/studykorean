@@ -146,22 +146,34 @@ h4 span {
 }
 
 /* Footer */
-.footer {
+footer {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #f5f2f2; /* Màu nền đen */
-  color: #161616; /* Màu chữ trắng */
-  padding: 10px 0;
-  width: 100%; /* Đảm bảo footer rộng đầy đủ */
+  background-color: #f5f2f2;
+  color: #161616;
+  width: 100%;
+  padding: 20px 0;
 }
 
 .footer-content {
   max-width: 1200px;
-  margin: 0 auto; /* Căn giữa nội dung bên trong */
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-content span {
+  flex: 1;
+  text-align: left;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .social-icons a {
@@ -169,8 +181,28 @@ h4 span {
 }
 
 .social-icons img {
-  width: 30px; /* Kích thước biểu tượng */
+  width: 30px;
   height: auto;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-content span {
+    margin-bottom: 10px;
+  }
+
+  .social-icons {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .social-icons a {
+    margin: 0 10px;
+  }
 }
 
 @media (max-width: 992px) {
