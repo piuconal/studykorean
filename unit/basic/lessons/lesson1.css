@@ -24,7 +24,7 @@ span {
 
 .audio button {
   width: 80px;
-  background-color: rgb(135, 135, 132) !important;
+  background-color: rgb(213, 213, 210) !important;
 }
 
 .audio {
@@ -35,4 +35,13 @@ span {
 
 .exam {
   flex-direction: column;
+}
+
+.clone {
+  flex-direction: column;
+}
+
+.clone button {
+  width: 80px;
+  background-color: rgb(213, 213, 210) !important;
 }
