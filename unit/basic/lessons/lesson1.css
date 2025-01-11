@@ -45,3 +45,7 @@ span {
   width: 80px;
   background-color: rgb(213, 213, 210) !important;
 }
+
+.clone a {
+  color: rgb(210, 51, 51);
+}
