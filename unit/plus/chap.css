@@ -56,10 +56,10 @@ img {
     font-size: 14px;
   }
   img {
-    width: 300px;
+    width: 400px;
   }
   .text-container {
-    width: 300px;
+    width: 100%;
     transform: scale(0.8);
   }
 }
