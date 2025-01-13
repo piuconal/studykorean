@@ -3,7 +3,7 @@ let scrollToTopBtn = document.createElement("button");
 scrollToTopBtn.id = "scrollToTopBtn";
 scrollToTopBtn.className = "btn btn-primary shadow";
 scrollToTopBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
-document.body.appendChild(scrollToTopBtn);  
+document.body.appendChild(scrollToTopBtn);
 // JavaScript để hiển thị nút khi cuộn xuống và cuộn lên đầu trang khi nhấn
 window.onscroll = function () {
   scrollFunction();
